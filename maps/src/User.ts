@@ -13,6 +13,9 @@ export class User {
       lng: parseFloat(faker.address.longitude()),
     };
   }
+  markerContent(): string {
+    return `User Name: ${this.name}`;
+  }
   sayHello() {
     console.log(
       `Hello, my name is ${this.name} and I am at ${this.location.lat} lat and ${this.location.lng} lng.`
